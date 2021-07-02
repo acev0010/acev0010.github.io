@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.container {
+    max-width: 1000px;
+    /* top-bottom left-right */
+    margin: 0 auto;
+    background-color: #D4E9E7;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    
+    
+}
+
+/* padding for the page */
+
+.pad {
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+header img{
+    width: 100%;
+    padding: 0;
+}
+
+body {
+    background-color: #aad4cf;
+    padding: 0;
+}
+
+
+
+h1 {
+    position: absolute;
+    top: 24%;
+    left: 39%;
+    color: white;
+    width: 30%;
+    background-repeat: no-repeat;
+    font-size: 350%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    font-weight: lighter;
+    
+    
+}
+
+nav {
+
+    padding: 0;
+    list-style: none;
+    margin-left: 0px;
+
+    
+    
+    
+}
+
+nav ul li {
+
+    display: inline-block;
+    text-align:center; 
+    padding: 0;
+     list-style: none;
+    font-size: 150%; 
+    font-weight: bold;
+    
+   
+    
+}
+
+#border {
+
+    border-right: 1px black solid;
+    padding-right: 130px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+#bordertwo {
+
+    border-right: 1px black solid;
+    padding-right: 130px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+/* contact li */
+#contact {
+
+    padding-left:50px
+    
+    
+}
+
+h2 {
+
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+article img {
+
+    float: left;
+    width: 250px;
+    margin-right: 1em;
+    padding-bottom: 18px;
+
+}
+
+
+p {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
+}
+
+h3 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    padding-top: 20px;
+    font-weight: bold;  
+    padding-bottom: 10px;
+}
+
+article ul {
+
+    padding-left: 15px;
+    font-size: 90%;
+    list-style-type: disc;
+    padding-top: 5px;
+}
+
+/* Adding margin to make the text closer */
+article ul li {
+
+    
+    font-weight: bold;
+}
+
+.boxed {
+    border: 1px solid black ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+
+}
+
+#fullname {
+    width: 850px;
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+#email{
+    width: 850px;
+    height: 20px;
+   margin-bottom: 15px;
+   margin-top: 10px;
+}
+
+/* deleted label tag 7:24 pm */
+
+section p {
+    margin-bottom: 5px;
+}
+
+#message {
+
+    width: 850px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* Need to add font light */
+footer {
+    text-align: right;
+    font-size: 90%;
+    padding-right: 20px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+h4 {
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.hole {
+
+    position:relative;
+    padding-top: 10px;
+    
+}
+
+button { 
+    background-color: initial;
+    border: 1px solid black ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+

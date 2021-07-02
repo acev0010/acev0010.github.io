@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    /* adding background image */
+    background-image: url(../images/white_brick_wall.png);
+    /* use two dots to go backwards in the folder */
+
+    padding-top: 92px;
+}
+
+.container {
+    max-width: 1200px;
+    /* top-bottom left-right */
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* This is a CSS comment
+   Shortcut for adding comment is control + /
+*/
+
+
+h1 {
+    color: peru;
+}
+
+p {
+    background-color: lightblue;
+}
+
+/* Selecting multiple elements */
+
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child element */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+/* Slecting child elements multiple level */
+nav ul a {
+    display: block;
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Selecting elemnt with id value */
+/* color image repeat position-x position-y */
+#treatofweek {
+    position: relative;
+    background: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover;
+
+    color: white;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16 = 20 */
+    padding: 1em;
+    /* 1 x 20 = 20px */
+
+    width: 50%;
+
+}
+
+/* Position - Absolute */
+/* 0020 specifity (because there are two classes) */
+.orange-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.orange-link {
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+
+}
+
+
+/* Example of Float layout */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+aside {
+    width: 20%;
+}
+
+/* 80+20 = 100% so the article and aside fit */
+
+section {
+    clear: both;
+}
+
+/* With the clear, we fix the float for the section and that way it doesn't stay behind */
+
+/* Direct child selector */
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+    /* 1 em= 24px */
+}
+
+/* 
+
+    html = 20px
+    1rem = 20 px
+    font-size: .5rem; = 10px
+    1em = 10px
+    0.5 = 5px;
+
+*/
+
+/* Adjavent sibling selector */
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p {
+    text-transform: uppercase;
+}
+
+
+/* Attribute selector */
+[href="treatofweek"] {
+    font-weight: bold;
+}
+
+img[src$=".jpg"] {
+    border: 4px solid black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+/* 
+Using pseudo classes
+Styling navigation
+*/
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: orange;
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related selectors */
+/* first-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/*  Styling a table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child seelctor - even keyword */
+tbody tr:nth-child(even) {
+    /*  hex color value with 6 characters */
+    background-color: #d5836c;
+}
+
+
+/* 
+    Using the nth-child with n.
+    Where n is 0,1,2,3... until number of elements
+*/
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using a formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* 0001 */
+footer {
+    background-color: aqua;
+}
+
+/* 0010 */
+
+.sire-footer {
+    background-color: cornflowerblue;
+}
+
+/* CSS Box Model */
+
+section p {
+    width: 50%;
+    /* top-bottom left-right */
+    padding: 1em .5em;
+    /* top right bottom left */
+    margin: -1em 2em 2em 2em;
+    border-bottom: 2px solid black;
+}
