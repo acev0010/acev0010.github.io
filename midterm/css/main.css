@@ -129,6 +129,8 @@ nav ul li {
 
 }
 
+/* adding a second border for the list */
+
 #bordertwo {
 
     border-right: 1px black solid;
@@ -236,8 +238,6 @@ section p {
 }
 
 
-
-/* Need to add font light */
 footer {
     text-align: right;
     font-size: 90%;
@@ -274,5 +274,7 @@ button {
     padding-bottom: 10px;
     padding-top: 10px;
   }
+
+
 
 
