@@ -240,6 +240,32 @@ p {
   text-transform: uppercase;
 }
 
+/* Navigation */
+
+.nav-list li {
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+  background-color: #00ADD8;
+  color: inherit;
+}
+
+/*  for better user experience, we don't add padding or background in the nav list */
+
 /* Mobile App Section */
 .btn {
   text-decoration: none;
@@ -253,6 +279,21 @@ p {
 .btn:focus {
   background-color: #00ADD8;
   color: inherit;
+}
+
+/* Actions Section */
+
+.actions-list{
+  display: flex;
+  flex-flow: row wrap;
+}
+/* If we only use display flex it will force us to scroll horizontally, which is not good user experience, hence why we add flex-flow: row wrap; */
+
+.actions-list li {
+  max-width: 50%;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /* Footer */
@@ -291,6 +332,22 @@ p {
     color: white;
   }
 
+  /* Navigation */
+
+  .nav-list{
+    display: flex;
+  }
+
+  .nav-list li {
+    flex: 1;
+    border: none;
+    border-right: 1px solid black;
+  }
+
+  .nav-list li:last-child{
+    border: none;
+  }
+
   /* App Section */
   .app img {
     width: 40%;
@@ -302,4 +359,17 @@ p {
     float: right;
   }
 }
+
+/* ----------------------------
+      Media Query 800 px 
+-------------------------------*/
+
+/* We are adding a new media query because the five elements don't fit under 800px */
+
+@media screen and (min-width: 800px) {
+  .actions-list li {
+    max-width: 20%;
+  }
+}
+
 
