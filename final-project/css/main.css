@@ -237,10 +237,10 @@ label{
 /* Banner/header section */
 
 .banner{
-  background-image: url("/week12final/images/main-banner.jpg");
+  background-image: url("/final-project/images/main-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+ 
   position: relative;
 }
 
