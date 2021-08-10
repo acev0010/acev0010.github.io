@@ -196,9 +196,10 @@ h5 {
 }
 
 /* LoVe HAte */
-a,
-a:link,
-a:visited {
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
   display: block;
   color: inherit;
   text-decoration: none;
@@ -207,6 +208,10 @@ a:visited {
   
 }
 
+.border {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 /* Navigation */
 
@@ -231,8 +236,8 @@ a:visited {
   color: #c78c06;
 }
 
-.nav-list i:hover,
-#button-nav:hover
+#button-nav:hover,
+#button-nav:hover i
  {
   background-color: #c78c06;
   color: #222;
@@ -246,8 +251,9 @@ a:visited {
 #site-search {
   display: inline-block;
   vertical-align: middle;
-  width: 500px;
+  width: 90%;
   height: 30px;
+  margin-right: -4px;
 }
 
 .main-nav ul li {
@@ -493,6 +499,10 @@ label{
 
 /* contact */
 
+.contact h2 {
+  margin-top: -4px;
+}
+
 .contact {
   padding: 10px 10px 10px 10px;
 }
@@ -548,21 +558,28 @@ label{
 
 /* Table */
 
-table th:nth-child(n),
-table td:nth-child(n) {
-  border: 1px solid black;
-  padding: 10px 200px 10px 20px;
-  
 
+table {
+    width: 100%;
+    border: 1px solid black;
+    height: 20%;
+      
 }
 
-table th:nth-child(n) {
+
+table th {
   background-color: #ffe6ac;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
 }
 
-table td:nth-child(n) {
-  text-align: left
+table td {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
 
 table.hours td, table.hours th {
@@ -570,16 +587,40 @@ table.hours td, table.hours th {
   
 }
 
+/* Footer */
+
+footer {
+  background-color: #222;
+  color: #c78c06;
+  padding: 30px 10px 10px 20px;
+}
+
+footer a {
+  color: #c78c06;
+}
+
 
 
 /* -------------------------------
         Desktop Styles
 ---------------------------------- */
-@media screen and (min-width: 760x) and (min-width: 1200px) {
-  html { 
+@media screen and (min-width: 760px) {
+  
+  nav ul {
+    display: inline-flex;
+   text-align: center;
+    
   }
+
+  .pnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  
+  
 }
-
-
 
 
