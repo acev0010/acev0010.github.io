@@ -144,6 +144,10 @@ html {
   box-sizing: border-box;
 }
 
+p + p {
+  margin-top: 8px;
+}
+
 body {
   line-height: 1.5;
 }
@@ -168,7 +172,7 @@ h4,
 h5 {
   font-weight: bold;
   /* top left-right bottom */
-  margin: 1em 0 0.5em;
+  margin: 0.5em 0 0.5em;
 }
 
 h1 {
@@ -195,31 +199,60 @@ h5 {
 a,
 a:link,
 a:visited {
+  display: block;
   color: inherit;
   text-decoration: none;
-  padding: 10px 80px;
+  padding: 1em 0;
   text-align: center;
-}
-
-a:hover,
-a:focus {
-  color: #222;
-  background-color: #c78c06;;
   
 }
 
+
 /* Navigation */
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+  color: #222;
+  background-color: #c78c06;
+}
 
 .main-nav {
   color:  #c78c06;
   background-color: #222;
   text-align: center;
-  padding: 10px 10px 10px 10px;
+  
    
+}
+
+.nav-list i {
+  display: inline-block;
+  vertical-align: middle;
+  color: #c78c06;
+}
+
+.nav-list i:hover,
+#button-nav:hover
+ {
+  background-color: #c78c06;
+  color: #222;
+}
+
+#button-nav {
+  background-color: #222;
+  border-color: #c78c06;
+}
+
+#site-search {
+  display: inline-block;
+  vertical-align: middle;
+  width: 500px;
+  height: 30px;
 }
 
 .main-nav ul li {
 padding-top: 1rem;
+padding: 10px 10px 10px 10px;
 
 }
 
@@ -228,32 +261,321 @@ label{
 }
 
 .main-nav img {
-  display: inherit
-  
-  
+  display: inherit 
 }
 
 
 /* Banner/header section */
 
 .banner{
-  background-image: url("/final-project/images/main-banner.jpg");
+  background-image: url("../images/main-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
- 
-  position: relative;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.banner-center {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  color: white;
+  padding: 10px 20px 10px 10px;
+}
+
+.banner-center p {
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+.banner-center a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #c78c06;
+  color: #222;
+  padding: 20px 20px 20px 20px;
+}
+
+.banner-center i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.btn1:hover,
+.btn1:focus {
+  background-color: #222;
+  color: #c78c06;
+}
+
+/* About us section */
+
+.aboutsection {
+  padding: 15px 15px 20px 15px;
+  background-color: #ffe6ac;
+
+}
+
+.aboutsection img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: -20px;
+  
+}
+.aboutsection h2 {
+  padding: 0px 0px 0px 0px;
+}
+
+/* Services section */
+
+.servicesection {
+  padding: 10px 10px 20px 10px;
+}
+
+.servicesection h2 {
+  margin-top: 2px;
+  margin-bottom: 1px;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+  background-color: #ffe6ac;
+  margin-bottom: 1em;
+  
+}
+
+.container-1 h3,
+.container-2 h3,
+.container-3 h3,
+.container-4 h3,
+.container-5 h3 {
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.container-1 p,
+.container-2 p,
+.container-3 p,
+.container-4 p,
+.container-5 p {
+  padding: 15px 15px 20px 15px;
+}
+
+.container-1 a,
+.container-2 a,
+.container-3 a,
+.container-4 a,
+.container-5 a {
+  text-decoration: none;
+  display: inline-block;
+  background-color:#222;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  margin-left: 15px;
+  margin-bottom: 1em;
 }
 
 
-/* Actions Section */
+.container-1 img ,
+.container-2 img ,
+.container-3 img ,
+.container-4 img ,
+.container-5 img {
+  width: 100%;
+  height: 100%;
 
+}
+
+.btn2 {
+  background-color: #222;
+  
+}
+
+
+.container-1 i,
+.container-2 i,
+.container-3 i,
+.container-4 i,
+.container-5 i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.btn2:hover,
+.btn2:focus {
+  background-color:#c78c06;
+  color:#222;
+}
+
+/* Vision section */
+
+
+.vision{
+  background-image: url("../images/vision.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 20px 20px 20px;
+}
+
+.vision p{
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: white;
+}
+
+.vision h3 {
+  color: white;
+}
+
+.vision a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(0,0,0, .55);
+  border: #c78c06;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  padding: 25px 40px 25px 40px;
+  font-size: 20px;
+ 
+}
+
+.vision i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.btn2:hover,
+.btn2:focus {
+  background-color: #222;
+  color: #c78c06;
+}
+
+/*-- Team --*/
+
+.teamcontainer {
+  padding: 10px 10px 10px 10px;
+
+}
+
+.teamcontainer img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -1rem;
+
+}
+
+.john,
+.bob {
+  background-color: #ffe6ac;
+  margin-bottom: 1rem;
+  padding: 10px 10px 10px 10px;
+  
+}
+
+.ceo {
+  font-weight: bold;
+  margin-top: -25px;
+  padding-left: 8px;
+  border-bottom: #c78c06;
+  border-style: solid;
+  
+}
+
+/* contact */
+
+.contact {
+  padding: 10px 10px 10px 10px;
+}
+
+#fullname {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#email{
+  width: 100%;
+  height: 30px;
+ margin-bottom: 15px;
+ margin-top: 10px;
+}
+
+#message {
+
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.contact label {
+  display: initial;
+}
+
+.contact a {
+  text-decoration: none;
+  display: inline-block;
+  background-color:#222;
+  padding: 5px 5px 5px 5px;
+  color: #c78c06;
+  font-size: 20px;
+  
+  
+}
+
+.btn3 {
+  background-color: #222;
+  
+  
+}
+
+.btn3:hover,
+.btn3:focus {
+  background-color:#c78c06;
+  color:#222;
+}
+
+/* Table */
+
+table th:nth-child(n),
+table td:nth-child(n) {
+  border: 1px solid black;
+  padding: 10px 200px 10px 20px;
+  
+
+}
+
+table th:nth-child(n) {
+  background-color: #ffe6ac;
+  text-align: center;
+}
+
+table td:nth-child(n) {
+  text-align: left
+}
+
+table.hours td, table.hours th {
+  border: 1px solid #000000;
+  
+}
 
 
 
 /* -------------------------------
         Desktop Styles
 ---------------------------------- */
-@media screen and (min-width: 760x) {
+@media screen and (min-width: 760x) and (min-width: 1200px) {
   html { 
   }
 }
