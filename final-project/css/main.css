@@ -325,12 +325,13 @@ label{
 .aboutsection img {
   width: 100%;
   height: 100%;
-  padding-bottom: -20px;
   
 }
-.aboutsection h2 {
+.about-text {
   padding: 0px 0px 0px 0px;
+  margin-top: -15px;
 }
+
 
 /* Services section */
 
@@ -480,6 +481,10 @@ label{
 
 }
 
+.team h2 {
+  padding-left: 10px;
+}
+
 .john,
 .bob {
   background-color: #ffe6ac;
@@ -499,8 +504,13 @@ label{
 
 /* contact */
 
+.message h3 {
+  margin-top: -15px;
+}
+
 .contact h2 {
   margin-top: -4px;
+  padding-left: 10px;
 }
 
 .contact {
@@ -563,6 +573,7 @@ table {
     width: 100%;
     border: 1px solid black;
     height: 20%;
+    margin-top: 10px;
       
 }
 
@@ -656,6 +667,7 @@ footer a {
     font-size: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 0px;
   
   }
 
@@ -765,15 +777,19 @@ footer a {
 
     .team h2 {
       padding-left: 50px;
+      
     }
-
+    .team h3 {
+      margin-top: 0px;
+    }
     
-
     .teamcontainer {
       display: flex;
       flex-wrap: wrap;
       margin-top: -30px;
       padding: 10px 10px 150px 50px;
+      margin-left: 50px;
+      margin-right: 50px;
       
     }
 
@@ -834,6 +850,16 @@ footer a {
   
  }
 
+ .hours,
+ h3 {
+   margin-top: -20px;
+   margin-bottom: 10px;
+ }
+
+ h3 {
+   margin-bottom: 20px;
+ }
+
  .message {
   flex-basis: 60%;
   order: -2;
@@ -841,6 +867,7 @@ footer a {
 
  .message h3 {
    margin: 0px;
+   margin-top: -20px;
    padding-right: 0px;
  }
 
@@ -852,10 +879,10 @@ footer a {
  table,
  .hours {
   padding-top: 20px;
-  width: 130%;
+  width: 150%;
   height: 20%;
   order: 1;
-    
+  
 }
 
 .location {
